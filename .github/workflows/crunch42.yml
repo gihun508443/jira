@@ -24,6 +24,9 @@ name: "42Crunch REST API Static Security Testing"
 
 # follow standard Code Scanning triggers
 on:
+  issues:
+    types:
+      - closed
   push:
     branches: [ "main" ]
   pull_request:
